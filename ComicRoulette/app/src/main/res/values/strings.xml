@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Comic Roulette</string>
+    <string name="title">Comic Roulette</string>
+    <string name="action_save">Save Comic to Gallery</string>
+    <string name="action_home">Return Home</string>
+    <string name="action_done">Done!</string>
+    <string name="num_artists">Select the number of artists</string>
+    <string name="frame_num">Frame %1$d of %2$d</string>
+    <string name="play_online">Online Roulette</string>
+
+    <string name="get_comic_url">http://10.0.2.2:8080/getComic</string>
+    <string name="get_entire_comic_url">http://10.0.2.2:8080/getEntireComic?comicid=%1$s</string>
+    <string name="post_comic_url">http://10.0.2.2:8080/postComic</string>
+
+    <string name="mComicId_string">comicID</string>
+    <string name="mPrevFrame_string">prevFrame</string>
+    <string name="mCompletedFrames_string">framesCompleted</string>
+    <string name="putFrame_string">putFrame</string>
+    <string name="frame_string">frame</string>
+    <string-array name="num_artists_array">
+        <item>  3  </item>
+        <item>  4  </item>
+        <item>  5  </item>
+    </string-array>
+</resources>

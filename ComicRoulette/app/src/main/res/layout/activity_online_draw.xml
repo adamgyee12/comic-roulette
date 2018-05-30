@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_online_draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.adamgyee.comicstripbuilder.OnlineDrawActivity">
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/layout_border"
+        />
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+    <FrameLayout
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:background="@drawable/layout_border">
+
+        <com.simplify.ink.InkView
+            android:id="@+id/ink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight=".2"
+            android:id="@+id/black_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/black_btn" />
+        <Button
+            android:layout_weight=".2"
+            android:id="@+id/blue_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/blue_btn" />
+        <Button
+            android:layout_weight=".2"
+            android:id="@+id/red_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/red_btn" />
+        <Button
+            android:layout_weight=".2"
+            android:id="@+id/yellow_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/yellow_btn" />
+        <Button
+            android:layout_weight=".2"
+            android:id="@+id/green_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/green_btn" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/undo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="undo"/>
+        <Button
+            android:id="@+id/white_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="eraser"/>
+        <Button
+            android:id="@+id/finished_drawing_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="done"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

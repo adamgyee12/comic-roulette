@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root" android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/num_artists"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+    />
+
+    <RadioGroup
+        android:id="@+id/num_artsts_rdio"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb1">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <TextView android:id="@+id/custom_fullimage_placename"
+        android:layout_width="wrap_content" android:layout_height="fill_parent"
+        android:textColor="#FFF">
+    </TextView>
+</LinearLayout>
